@@ -1,7 +1,5 @@
-executor: "cluster-generic"
-jobscript: "grid-jobscript.sh"
-cluster-generic-submit-cmd: "grid-submit.py"
-cluster-generic-status-cmd: "grid-status.py"
+executor: "htcondor"
+htcondor-jobdir: "{{cookiecutter.htcondor_log_dir}}"
 max-jobs-per-second: 100
 max-status-checks-per-second: 100
 restart-times: 5
